@@ -14,7 +14,7 @@ repos:
     rev: 1.9.1
     hooks:
       - id: nbqa-black
-        additional_dependencies: [black==20.8b1]
+        additional_dependencies: [black==22.3.0]
       - id: nbqa-pyupgrade
         additional_dependencies: [pyupgrade==2.7.3]
       - id: nbqa-isort
