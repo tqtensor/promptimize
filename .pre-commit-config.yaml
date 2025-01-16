@@ -1,9 +1,16 @@
 repos:
+  - repo: https://github.com/ambv/black
+    rev: 23.3.0
+    hooks:
+      - id: black
+        language_version: python3
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.4.0
     hooks:
       - id: check-json
+        exclude: '(^.vscode/)'
       - id: pretty-format-json
+        exclude: '(^.vscode/)'
         args:
           - --autofix
           - --indent
@@ -19,3 +26,8 @@ repos:
         additional_dependencies: [pyupgrade==2.7.3]
       - id: nbqa-isort
         additional_dependencies: [isort==5.6.4]
+  - repo: https://github.com/pycqa/isort
+    rev: 5.11.5
+    hooks:
+      - id: isort
+        args: ['--profile', 'black']

@@ -7,6 +7,7 @@ readme = "README.md"
 version = "0.1.0"
 
 [tool.poetry.dependencies]
+instructor = "^1.5"
 langchain = "^0.2.17"
 langchain-openai = "^0.1.25"
 openai = "^1.59.7"
