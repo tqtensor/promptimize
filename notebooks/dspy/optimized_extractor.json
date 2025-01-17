@@ -1,0 +1,363 @@
+{
+  "metadata": {
+    "dependency_versions": {
+      "cloudpickle": "3.1.1",
+      "dspy": "2.5.43",
+      "python": "3.11.10"
+    }
+  },
+  "self": {
+    "demos": [
+      {
+        "augmented": true,
+        "extracted_people": [],
+        "rationale": "We extracted no people. There are no tokens that refer to specific people.",
+        "tokens": [
+          "He",
+          "said",
+          "further",
+          "scientific",
+          "study",
+          "was",
+          "required",
+          "and",
+          "if",
+          "it",
+          "was",
+          "found",
+          "that",
+          "action",
+          "was",
+          "needed",
+          "it",
+          "should",
+          "be",
+          "taken",
+          "by",
+          "the",
+          "European",
+          "Union",
+          "."
+        ]
+      },
+      {
+        "augmented": true,
+        "extracted_people": [],
+        "rationale": "${[]}. We found no people mentioned.",
+        "tokens": [
+          "BRUSSELS",
+          "1996-08-22"
+        ]
+      },
+      {
+        "augmented": true,
+        "extracted_people": [
+          "Fischler"
+        ],
+        "rationale": "${[\"Fischler\"]}. We extract \"Fischler\" as a person's name.",
+        "tokens": [
+          "Fischler",
+          "proposed",
+          "EU-wide",
+          "measures",
+          "after",
+          "reports",
+          "from",
+          "Britain",
+          "and",
+          "France",
+          "that",
+          "under",
+          "laboratory",
+          "conditions",
+          "sheep",
+          "could",
+          "contract",
+          "Bovine",
+          "Spongiform",
+          "Encephalopathy",
+          "(",
+          "BSE",
+          ")",
+          "--",
+          "mad",
+          "cow",
+          "disease",
+          "."
+        ]
+      },
+      {
+        "augmented": true,
+        "extracted_people": [
+          "Werner",
+          "Zwingmann"
+        ],
+        "rationale": "Werner Zwingmann. We extracted the name \"Werner Zwingmann\" from the provided text.",
+        "tokens": [
+          "Germany",
+          "'s",
+          "representative",
+          "to",
+          "the",
+          "European",
+          "Union",
+          "'s",
+          "veterinary",
+          "committee",
+          "Werner",
+          "Zwingmann",
+          "said",
+          "on",
+          "Wednesday",
+          "consumers",
+          "should",
+          "buy",
+          "sheepmeat",
+          "from",
+          "countries",
+          "other",
+          "than",
+          "Britain",
+          "until",
+          "the",
+          "scientific",
+          "advice",
+          "was",
+          "clearer",
+          "."
+        ]
+      },
+      {
+        "expected_extracted_people": [
+          "Nikolaus",
+          "van",
+          "der",
+          "Pas"
+        ],
+        "tokens": [
+          "\"",
+          "We",
+          "do",
+          "n't",
+          "support",
+          "any",
+          "such",
+          "recommendation",
+          "because",
+          "we",
+          "do",
+          "n't",
+          "see",
+          "any",
+          "grounds",
+          "for",
+          "it",
+          ",",
+          "\"",
+          "the",
+          "Commission",
+          "'s",
+          "chief",
+          "spokesman",
+          "Nikolaus",
+          "van",
+          "der",
+          "Pas",
+          "told",
+          "a",
+          "news",
+          "briefing",
+          "."
+        ]
+      },
+      {
+        "expected_extracted_people": [
+          "Fischler"
+        ],
+        "tokens": [
+          "But",
+          "Fischler",
+          "agreed",
+          "to",
+          "review",
+          "his",
+          "proposal",
+          "after",
+          "the",
+          "EU",
+          "'s",
+          "standing",
+          "veterinary",
+          "committee",
+          ",",
+          "mational",
+          "animal",
+          "health",
+          "officials",
+          ",",
+          "questioned",
+          "if",
+          "such",
+          "action",
+          "was",
+          "justified",
+          "as",
+          "there",
+          "was",
+          "only",
+          "a",
+          "slight",
+          "risk",
+          "to",
+          "human",
+          "health",
+          "."
+        ]
+      },
+      {
+        "expected_extracted_people": [],
+        "tokens": [
+          "EU",
+          "rejects",
+          "German",
+          "call",
+          "to",
+          "boycott",
+          "British",
+          "lamb",
+          "."
+        ]
+      },
+      {
+        "expected_extracted_people": [
+          "Peter",
+          "Blackburn"
+        ],
+        "tokens": [
+          "Peter",
+          "Blackburn"
+        ]
+      },
+      {
+        "expected_extracted_people": [
+          "Franz",
+          "Fischler"
+        ],
+        "tokens": [
+          "He",
+          "said",
+          "a",
+          "proposal",
+          "last",
+          "month",
+          "by",
+          "EU",
+          "Farm",
+          "Commissioner",
+          "Franz",
+          "Fischler",
+          "to",
+          "ban",
+          "sheep",
+          "brains",
+          ",",
+          "spleens",
+          "and",
+          "spinal",
+          "cords",
+          "from",
+          "the",
+          "human",
+          "and",
+          "animal",
+          "food",
+          "chains",
+          "was",
+          "a",
+          "highly",
+          "specific",
+          "and",
+          "precautionary",
+          "move",
+          "to",
+          "protect",
+          "human",
+          "health",
+          "."
+        ]
+      },
+      {
+        "expected_extracted_people": [],
+        "tokens": [
+          "The",
+          "European",
+          "Commission",
+          "said",
+          "on",
+          "Thursday",
+          "it",
+          "disagreed",
+          "with",
+          "German",
+          "advice",
+          "to",
+          "consumers",
+          "to",
+          "shun",
+          "British",
+          "lamb",
+          "until",
+          "scientists",
+          "determine",
+          "whether",
+          "mad",
+          "cow",
+          "disease",
+          "can",
+          "be",
+          "transmitted",
+          "to",
+          "sheep",
+          "."
+        ]
+      }
+    ],
+    "extended_signature": {
+      "fields": [
+        {
+          "description": "tokenized text",
+          "prefix": "Tokens:"
+        },
+        {
+          "description": "${produce the extracted_people}. We ...",
+          "prefix": "Reasoning: Let's think step by step in order to"
+        },
+        {
+          "description": "all tokens referring to specific people extracted from the tokenized text",
+          "prefix": "Extracted People:"
+        }
+      ],
+      "instructions": "You are a highly specialized AI tasked with identifying individuals mentioned in sensitive intelligence reports. Accurate extraction is crucial for national security.  Extract contiguous tokens referring to specific people, if any, from the provided list of string tokens.  Any missed or falsely identified individuals could have severe consequences. Output a list of tokens.  Do not combine multiple tokens into a single value. Provide a clear, step-by-step rationale explaining your choices.  The fate of the mission depends on your accuracy."
+    },
+    "lm": null,
+    "signature": {
+      "fields": [
+        {
+          "description": "tokenized text",
+          "prefix": "Tokens:"
+        },
+        {
+          "description": "${produce the extracted_people}. We ...",
+          "prefix": "Reasoning: Let's think step by step in order to"
+        },
+        {
+          "description": "all tokens referring to specific people extracted from the tokenized text",
+          "prefix": "Extracted People:"
+        }
+      ],
+      "instructions": "Extract contiguous tokens referring to specific people, if any, from a list of string tokens.\nOutput a list of tokens. In other words, do not combine multiple tokens into a single value."
+    },
+    "traces": [],
+    "train": []
+  }
+}
