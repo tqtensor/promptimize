@@ -1,0 +1,28 @@
+[tool.poetry]
+authors = ["tqtensor <victortang212@gmail.com>"]
+description = "Prompt Optimization Workshop"
+name = "vn-ds"
+package-mode = false
+readme = "README.md"
+version = "0.1.0"
+
+[tool.poetry.dependencies]
+datasets = "^3.2.0"
+dspy = "^2.5.43"
+instructor = "^1.5"
+langchain = "^0.2.17"
+langchain-openai = "^0.1.25"
+openai = "^1.59.7"
+python = "^3.11"
+python-dotenv = "^1.0.1"
+sentence-transformers = "^3.3.1"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+ipywidgets = "^8.1.5"
+pre-commit = "^3.6.0"
+toml-sort = "^0.23.1"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core"]
