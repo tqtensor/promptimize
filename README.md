@@ -4,11 +4,9 @@ This repository provides a tutorial on transitioning from manual to automatic pr
 
 ## Getting Started
 
-### Prerequisites
-- **Bash**: Ensure you have a Bash shell available on your system.
-- **Python**: A Python installation is required. If you don't have Python installed, the setup script will download a standalone Python executable for you.
-
 ### Setting Up the Environment
+
+**Important Note for Windows Users:** Open your repository in VS Code. If you haven't already, create and configure a Dev Container. Refer to the [Quick Start: Open an Existing Folder in a Container](https://code.visualstudio.com/docs/devcontainers/containers#_quick-start-open-an-existing-folder-in-a-container) guide for detailed instructions. Once done, ensure you reopen your project in the Dev Container before proceeding with the remaining setup steps. Wait for the container to fully initialize and load.
 
 #### Option 1: Automated Setup (Recommended)
 Run the following command to automatically set up a virtual environment and install dependencies:
