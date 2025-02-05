@@ -1,0 +1,27 @@
+{
+  "build": {
+    "context": "..",
+    "dockerfile": "Dockerfile",
+    "options": [
+      "--platform=linux/amd64"
+    ]
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "continue.continue",
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-toolsai.jupyter",
+        "ms-toolsai.jupyter-hub",
+        "ms-toolsai.jupyter-keymap",
+        "ms-toolsai.jupyter-renderers",
+        "ms-toolsai.vscode-jupyter-cell-tags",
+        "ms-toolsai.vscode-jupyter-slideshow"
+      ]
+    }
+  },
+  "name": "DevContainer",
+  "remoteUser": "root",
+  "workspaceFolder": "/workspace"
+}
