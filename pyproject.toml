@@ -15,14 +15,16 @@ langchain-openai = "^0.1.25"
 openai = "^1.59.7"
 python = "^3.11"
 python-dotenv = "^1.0.1"
+
+[tool.poetry.group.dl.dependencies]
 sentence-transformers = "^3.3.1"
 
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.29.5"
 ipywidgets = "^8.1.5"
+pip-tools = "^7.4.1"
 pre-commit = "^3.6.0"
 toml-sort = "^0.23.1"
-pip-tools = "^7.4.1"
 
 [build-system]
 build-backend = "poetry.core.masonry.api"
