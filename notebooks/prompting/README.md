@@ -3,7 +3,7 @@
 ## Overview
 This tutorial series offers a structured journey through fundamental and advanced prompt engineering techniques. Through 7 focused modules, you'll learn to craft effective prompts, manage complex interactions, and evaluate AI model outputs using Google's Gemini via OpenRouter and LangChain.
 
-![Prompt Engineering](https://storage.googleapis.com/thaitang-sharing/prompt_engineering.jpg)
+![Prompt Engineering](https://storage.googleapis.com/tqtensor-sharing/prompt_engineering.jpg)
 
 ## Tutorial Modules
 
