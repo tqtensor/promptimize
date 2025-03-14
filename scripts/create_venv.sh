@@ -51,7 +51,7 @@ pip install -U pip
 pip install -U poetry
 
 if [[ -f "pyproject.toml" ]]; then
-    poetry install --without dev,dl
+    poetry install --without dl
 else
     poetry init
 fi

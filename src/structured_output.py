@@ -30,7 +30,7 @@ if __name__ == "__main__":
 
     # Extract structured data from natural language
     person = client.chat.completions.create(
-        model="google/gemini-pro-1.5",
+        model="bedrock/nova-pro-v1",
         response_model=Person,
         messages=[
             {"role": "user", "content": "Can you tell me about Harry Potter's profile?"}
