@@ -240,6 +240,7 @@ description = "Asyncer, async and await, focused on developer experience."
 optional = false
 python-versions = ">=3.8"
 groups = ["main"]
+markers = "python_full_version < \"3.12.4\""
 files = [
     {file = "asyncer-0.0.8-py3-none-any.whl", hash = "sha256:5920d48fc99c8f8f0f1576e1882f5022885589c5fcbc46ce4224ec3e53776eeb"},
     {file = "asyncer-0.0.8.tar.gz", hash = "sha256:a589d980f57e20efb07ed91d0dbe67f1d2fd343e7142c66d3a099f05c620739c"},
@@ -311,6 +312,7 @@ description = "Extensible memoizing collections and decorators"
 optional = false
 python-versions = ">=3.7"
 groups = ["main"]
+markers = "python_full_version < \"3.12.4\""
 files = [
     {file = "cachetools-5.5.2-py3-none-any.whl", hash = "sha256:d26a22bcc62eb95c3beabd9f1ee5e820d3d2704fe2967cbe350e20c8ffcd3f0a"},
     {file = "cachetools-5.5.2.tar.gz", hash = "sha256:1a661caa9175d26759571b2e19580f9d6393969e5dfca11fdb1f947a23e640d4"},
@@ -833,28 +835,24 @@ files = [
 
 [[package]]
 name = "dspy"
-version = "2.5.42"
+version = "2.5.7"
 description = "DSPy"
 optional = false
 python-versions = ">=3.9"
 groups = ["main"]
 markers = "python_full_version >= \"3.12.4\""
 files = [
-    {file = "dspy-2.5.42-py3-none-any.whl", hash = "sha256:cdd61c499462fba86e666c080effe041bea929bbaa57abe05281d02980c0fd79"},
-    {file = "dspy-2.5.42.tar.gz", hash = "sha256:fa66ab0e21b9601533e9aa92856fcd3a8091b32625179495d63b95d1d3e1ecdb"},
+    {file = "dspy-2.5.7-py3-none-any.whl", hash = "sha256:2b90689ae8de9fe7b16687649d1c137abff724c0b33817fa5228412e95a38294"},
+    {file = "dspy-2.5.7.tar.gz", hash = "sha256:6863f1b9bc561ce272dbcb015954582c0371c9da65e86e22f59880b418e618d5"},
 ]
 
 [package.dependencies]
-anyio = "*"
-asyncer = "0.0.8"
 backoff = "*"
-cachetools = "*"
 datasets = "*"
 diskcache = "*"
 httpx = "*"
 joblib = ">=1.3,<2.0"
-json-repair = "*"
-litellm = "1.51.0"
+litellm = "*"
 magicattr = ">=0.1.6,<0.2.0"
 openai = "*"
 optuna = "*"
@@ -862,14 +860,13 @@ pandas = "*"
 pydantic = ">=2.0,<3.0"
 regex = "*"
 requests = "*"
-tenacity = ">=8.2.3"
+structlog = "*"
 tqdm = "*"
 ujson = "*"
 
 [package.extras]
 chromadb = ["chromadb (>=0.4.14,<0.5.0)"]
 faiss-cpu = ["faiss-cpu", "sentence-transformers"]
-falkordb = ["async-timeout", "falkordb", "redis"]
 fastembed = ["fastembed"]
 google-vertex-ai = ["google-cloud-aiplatform (==1.43.0)"]
 groq = ["groq (>=0.8.0,<0.9.0)"]
@@ -1641,6 +1638,7 @@ description = "A package to repair broken json strings"
 optional = false
 python-versions = ">=3.9"
 groups = ["main"]
+markers = "python_full_version < \"3.12.4\""
 files = [
     {file = "json_repair-0.39.1-py3-none-any.whl", hash = "sha256:3001409a2f319249f13e13d6c622117a5b70ea7e0c6f43864a0233cdffc3a599"},
     {file = "json_repair-0.39.1.tar.gz", hash = "sha256:e90a489f247e1a8fc86612a5c719872a3dbf9cbaffd6d55f238ec571a77740fa"},
@@ -1944,45 +1942,14 @@ langsmith-pyo3 = ["langsmith-pyo3 (>=0.1.0rc2,<0.2.0)"]
 
 [[package]]
 name = "litellm"
-version = "1.51.0"
+version = "1.63.11"
 description = "Library to easily interface with LLM API providers"
 optional = false
 python-versions = "!=2.7.*,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,!=3.6.*,!=3.7.*,>=3.8"
 groups = ["main"]
-markers = "python_full_version >= \"3.12.4\""
 files = [
-    {file = "litellm-1.51.0-py3-none-any.whl", hash = "sha256:0b2c20d116834166c8440e5698d7d927dbcc78fcaa08ce0c5cbea2d0de55ec6c"},
-    {file = "litellm-1.51.0.tar.gz", hash = "sha256:8bf648677ee145a8fe5054a2e3f3a34895b9ab65a6015e4b94efca7ef406f466"},
-]
-
-[package.dependencies]
-aiohttp = "*"
-click = "*"
-importlib-metadata = ">=6.8.0"
-jinja2 = ">=3.1.2,<4.0.0"
-jsonschema = ">=4.22.0,<5.0.0"
-openai = ">=1.52.0"
-pydantic = ">=2.0.0,<3.0.0"
-python-dotenv = ">=0.2.0"
-requests = ">=2.31.0,<3.0.0"
-tiktoken = ">=0.7.0"
-tokenizers = "*"
-
-[package.extras]
-extra-proxy = ["azure-identity (>=1.15.0,<2.0.0)", "azure-keyvault-secrets (>=4.8.0,<5.0.0)", "google-cloud-kms (>=2.21.3,<3.0.0)", "prisma (==0.11.0)", "resend (>=0.8.0,<0.9.0)"]
-proxy = ["PyJWT (>=2.8.0,<3.0.0)", "apscheduler (>=3.10.4,<4.0.0)", "backoff", "cryptography (>=42.0.5,<43.0.0)", "fastapi (>=0.111.0,<0.112.0)", "fastapi-sso (>=0.10.0,<0.11.0)", "gunicorn (>=22.0.0,<23.0.0)", "orjson (>=3.9.7,<4.0.0)", "pynacl (>=1.5.0,<2.0.0)", "python-multipart (>=0.0.9,<0.0.10)", "pyyaml (>=6.0.1,<7.0.0)", "rq", "uvicorn (>=0.22.0,<0.23.0)"]
-
-[[package]]
-name = "litellm"
-version = "1.63.7"
-description = "Library to easily interface with LLM API providers"
-optional = false
-python-versions = "!=2.7.*,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,!=3.6.*,!=3.7.*,>=3.8"
-groups = ["main"]
-markers = "python_full_version < \"3.12.4\""
-files = [
-    {file = "litellm-1.63.7-py3-none-any.whl", hash = "sha256:fbdee39a894506c68f158c6b4e0079f9e9c023441fff7215e7b8e42162dba0a7"},
-    {file = "litellm-1.63.7.tar.gz", hash = "sha256:2fbd7236d5e5379eee18556857ed62a5ed49f4f09e03ff33cf15932306b984f1"},
+    {file = "litellm-1.63.11-py3-none-any.whl", hash = "sha256:f3915dc35309b164ef2419ad05e5241ddd97f3f47aa036df28365bf889d8ea23"},
+    {file = "litellm-1.63.11.tar.gz", hash = "sha256:89930895121d0cbf5553e560ed886c45be480ceec0eca3c53ae441473d5d46a4"},
 ]
 
 [package.dependencies]
@@ -1992,7 +1959,7 @@ httpx = ">=0.23.0"
 importlib-metadata = ">=6.8.0"
 jinja2 = ">=3.1.2,<4.0.0"
 jsonschema = ">=4.22.0,<5.0.0"
-openai = ">=1.61.0"
+openai = ">=1.66.1"
 pydantic = ">=2.0.0,<3.0.0"
 python-dotenv = ">=0.2.0"
 tiktoken = ">=0.7.0"
@@ -2603,14 +2570,14 @@ signedtoken = ["cryptography (>=3.0.0)", "pyjwt (>=2.0.0,<3)"]
 
 [[package]]
 name = "openai"
-version = "1.65.2"
+version = "1.66.3"
 description = "The official Python library for the openai API"
 optional = false
 python-versions = ">=3.8"
 groups = ["main"]
 files = [
-    {file = "openai-1.65.2-py3-none-any.whl", hash = "sha256:27d9fe8de876e31394c2553c4e6226378b6ed85e480f586ccfe25b7193fb1750"},
-    {file = "openai-1.65.2.tar.gz", hash = "sha256:729623efc3fd91c956f35dd387fa5c718edd528c4bed9f00b40ef290200fb2ce"},
+    {file = "openai-1.66.3-py3-none-any.whl", hash = "sha256:a427c920f727711877ab17c11b95f1230b27767ba7a01e5b66102945141ceca9"},
+    {file = "openai-1.66.3.tar.gz", hash = "sha256:8dde3aebe2d081258d4159c4cb27bdc13b5bb3f7ea2201d9bd940b9a89faf0c9"},
 ]
 
 [package.dependencies]
@@ -4414,6 +4381,25 @@ pure-eval = "*"
 
 [package.extras]
 tests = ["cython", "littleutils", "pygments", "pytest", "typeguard"]
+
+[[package]]
+name = "structlog"
+version = "25.2.0"
+description = "Structured Logging for Python"
+optional = false
+python-versions = ">=3.8"
+groups = ["main"]
+markers = "python_full_version >= \"3.12.4\""
+files = [
+    {file = "structlog-25.2.0-py3-none-any.whl", hash = "sha256:0fecea2e345d5d491b72f3db2e5fcd6393abfc8cd06a4851f21fcd4d1a99f437"},
+    {file = "structlog-25.2.0.tar.gz", hash = "sha256:d9f9776944207d1035b8b26072b9b140c63702fd7aa57c2f85d28ab701bd8e92"},
+]
+
+[package.extras]
+dev = ["freezegun (>=0.2.8)", "mypy (>=1.4)", "pretend", "pytest (>=6.0)", "pytest-asyncio (>=0.17)", "rich", "simplejson", "twisted"]
+docs = ["cogapp", "furo", "myst-parser", "sphinx", "sphinx-notfound-page", "sphinxcontrib-mermaid", "sphinxext-opengraph", "twisted"]
+tests = ["freezegun (>=0.2.8)", "pretend", "pytest (>=6.0)", "pytest-asyncio (>=0.17)", "simplejson"]
+typing = ["mypy (>=1.4)", "rich", "twisted"]
 
 [[package]]
 name = "sympy"

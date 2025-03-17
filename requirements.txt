@@ -36,10 +36,6 @@ anyio==4.8.0 ; python_version >= "3.11" and python_version < "4.0"
     #   dspy
     #   httpx
     #   openai
-appnope==0.1.4 ; python_version >= "3.11" and python_version < "4.0" and platform_system == "Darwin"
-    # via
-    #   -r /tmp/requirements_poetry_all.txt
-    #   ipykernel
 arrow==1.3.0 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
@@ -48,7 +44,7 @@ asttokens==3.0.0 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   stack-data
-asyncer==0.0.8 ; python_version >= "3.11" and python_version < "4.0"
+asyncer==0.0.8 ; python_version >= "3.11" and python_full_version < "3.12.4"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   dspy
@@ -66,7 +62,7 @@ build==1.2.2.post1 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   pip-tools
-cachetools==5.5.2 ; python_version >= "3.11" and python_version < "4.0"
+cachetools==5.5.2 ; python_version >= "3.11" and python_full_version < "3.12.4"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   dspy
@@ -174,6 +170,10 @@ fsspec[http]==2024.12.0 ; python_version >= "3.11" and python_version < "4.0"
     #   -r /tmp/requirements_poetry_all.txt
     #   datasets
     #   huggingface-hub
+greenlet==3.1.1 ; python_version >= "3.11" and python_version < "3.14" and (platform_machine == "aarch64" or platform_machine == "ppc64le" or platform_machine == "x86_64" or platform_machine == "amd64" or platform_machine == "AMD64" or platform_machine == "win32" or platform_machine == "WIN32")
+    # via
+    #   -r /tmp/requirements_poetry_all.txt
+    #   sqlalchemy
 h11==0.14.0 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
@@ -247,7 +247,7 @@ joblib==1.4.2 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   dspy
-json-repair==0.39.1 ; python_version >= "3.11" and python_version < "4.0"
+json-repair==0.39.1 ; python_version >= "3.11" and python_full_version < "3.12.4"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   dspy
@@ -307,7 +307,7 @@ langsmith==0.1.147 ; python_version >= "3.11" and python_version < "4.0"
     #   -r /tmp/requirements_poetry_all.txt
     #   langchain
     #   langchain-core
-litellm==1.63.7 ; python_version >= "3.11" and python_full_version < "3.12.4"
+litellm==1.63.11 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   dspy
@@ -365,7 +365,7 @@ oauthlib==3.2.2 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   jupyterhub
-openai==1.65.2 ; python_version >= "3.11" and python_version < "4.0"
+openai==1.66.3 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   dspy
