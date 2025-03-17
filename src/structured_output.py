@@ -30,7 +30,7 @@ if __name__ == "__main__":
 
     # Extract structured data from natural language
     person = client.chat.completions.create(
-        model="bedrock/nova-pro-v1",
+        model="azure/gpt-4o",
         response_model=Person,
         messages=[
             {"role": "user", "content": "Can you tell me about Harry Potter's profile?"}
