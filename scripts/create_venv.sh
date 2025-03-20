@@ -5,18 +5,9 @@ cd "$(pwd)"
 
 PREFIX_URL="https://github.com/indygreg/python-build-standalone/releases/download/20240909/"
 
-# Prompt for Python version
-read -p "Enter the desired Python version (e.g., 3.11): " PYTHON_VERSION
-
-# Determine the full version based on user input
-case "$PYTHON_VERSION" in
-3.12) VERSION="3.12.6" ;;
-3.11) VERSION="3.11.10" ;;
-3.10) VERSION="3.10.15" ;;
-3.9) VERSION="3.9.20" ;;
-3.8) VERSION="3.8.20" ;;
-*) echo "Error: Unsupported Python version. Please enter 3.8 to 3.12." && exit 1 ;;
-esac
+# Set Python version directly to 3.11
+PYTHON_VERSION="3.11"
+VERSION="3.11.10"
 
 if [[ -d "/usr/local/python${VERSION}" ]]; then
     echo "Python version ${VERSION} already exists. Skipping installation."
@@ -51,7 +42,7 @@ pip install -U pip
 pip install -U poetry
 
 if [[ -f "pyproject.toml" ]]; then
-    poetry install --without dl
+    poetry install --without dl --with dev
 else
     poetry init
 fi

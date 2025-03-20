@@ -6,7 +6,7 @@ toml-sort:
 
 lock-requirements:
 	poetry self add poetry-plugin-export@latest
-	poetry export --with dev --without-hashes -f requirements.txt > /tmp/requirements_poetry_all.txt
+	poetry export --without dl --with dev --without-hashes -f requirements.txt > /tmp/requirements_poetry_all.txt
 	pip-compile --output-file=requirements.txt --resolver=backtracking /tmp/requirements_poetry_all.txt --allow-unsafe
 
 menu:

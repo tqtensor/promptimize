@@ -4,11 +4,11 @@
 #
 #    pip-compile --allow-unsafe --output-file=requirements.txt /tmp/requirements_poetry_all.txt
 #
-aiohappyeyeballs==2.4.6 ; python_version >= "3.11" and python_version < "4.0"
+aiohappyeyeballs==2.6.1 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   aiohttp
-aiohttp==3.11.13 ; python_version >= "3.11" and python_version < "4.0"
+aiohttp==3.11.14 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   datasets
@@ -20,35 +20,30 @@ aiosignal==1.3.2 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   aiohttp
-alembic==1.14.1 ; python_version >= "3.11" and python_version < "4.0"
+alembic==1.15.1 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
-    #   jupyterhub
     #   optuna
 annotated-types==0.7.0 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   pydantic
-anyio==4.8.0 ; python_version >= "3.11" and python_version < "4.0"
+anyio==4.9.0 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   asyncer
     #   dspy
     #   httpx
     #   openai
-arrow==1.3.0 ; python_version >= "3.11" and python_version < "4.0"
-    # via
-    #   -r /tmp/requirements_poetry_all.txt
-    #   isoduration
 asttokens==3.0.0 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   stack-data
-asyncer==0.0.8 ; python_version >= "3.11" and python_full_version < "3.12.4"
+asyncer==0.0.8 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   dspy
-attrs==25.1.0 ; python_version >= "3.11" and python_version < "4.0"
+attrs==25.3.0 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   aiohttp
@@ -62,7 +57,7 @@ build==1.2.2.post1 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   pip-tools
-cachetools==5.5.2 ; python_version >= "3.11" and python_full_version < "3.12.4"
+cachetools==5.5.2 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   dspy
@@ -72,10 +67,6 @@ certifi==2025.1.31 ; python_version >= "3.11" and python_version < "4.0"
     #   httpcore
     #   httpx
     #   requests
-certipy==0.2.1 ; python_version >= "3.11" and python_version < "4.0"
-    # via
-    #   -r /tmp/requirements_poetry_all.txt
-    #   jupyterhub
 cffi==1.17.1 ; python_version >= "3.11" and python_version < "4.0" and (platform_python_implementation != "PyPy" or implementation_name == "pypy")
     # via
     #   -r /tmp/requirements_poetry_all.txt
@@ -108,14 +99,12 @@ comm==0.2.2 ; python_version >= "3.11" and python_version < "4.0"
     #   ipykernel
     #   ipywidgets
 cryptography==44.0.2 ; python_version >= "3.11" and python_version < "4.0"
-    # via
-    #   -r /tmp/requirements_poetry_all.txt
-    #   certipy
-datasets==3.3.2 ; python_version >= "3.11" and python_version < "4.0"
+    # via -r /tmp/requirements_poetry_all.txt
+datasets==3.4.1 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   dspy
-debugpy==1.8.12 ; python_version >= "3.11" and python_version < "4.0"
+debugpy==1.8.13 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   ipykernel
@@ -144,22 +133,18 @@ docstring-parser==0.16 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   instructor
-dspy==2.6.12 ; python_version >= "3.11" and python_full_version < "3.12.4"
+dspy==2.6.13 ; python_version >= "3.11" and python_full_version < "3.12.4"
     # via -r /tmp/requirements_poetry_all.txt
 executing==2.2.0 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   stack-data
-filelock==3.17.0 ; python_version >= "3.11" and python_version < "4.0"
+filelock==3.18.0 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   datasets
     #   huggingface-hub
     #   virtualenv
-fqdn==1.5.1 ; python_version >= "3.11" and python_version < "4.0"
-    # via
-    #   -r /tmp/requirements_poetry_all.txt
-    #   jsonschema
 frozenlist==1.5.0 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
@@ -188,12 +173,12 @@ httpx==0.28.1 ; python_version >= "3.11" and python_version < "4.0"
     #   langsmith
     #   litellm
     #   openai
-huggingface-hub==0.29.1 ; python_version >= "3.11" and python_version < "4.0"
+huggingface-hub==0.29.3 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   datasets
     #   tokenizers
-identify==2.6.8 ; python_version >= "3.11" and python_version < "4.0"
+identify==2.6.9 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   pre-commit
@@ -202,8 +187,6 @@ idna==3.10 ; python_version >= "3.11" and python_version < "4.0"
     #   -r /tmp/requirements_poetry_all.txt
     #   anyio
     #   httpx
-    #   jsonschema
-    #   jupyterhub
     #   requests
     #   yarl
 importlib-metadata==8.6.1 ; python_version >= "3.11" and python_version < "4.0"
@@ -214,7 +197,7 @@ instructor==1.5.2 ; python_version >= "3.11" and python_version < "4.0"
     # via -r /tmp/requirements_poetry_all.txt
 ipykernel==6.29.5 ; python_version >= "3.11" and python_version < "4.0"
     # via -r /tmp/requirements_poetry_all.txt
-ipython==9.0.0 ; python_version >= "3.11" and python_version < "4.0"
+ipython==9.0.2 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   ipykernel
@@ -225,10 +208,6 @@ ipython-pygments-lexers==1.1.1 ; python_version >= "3.11" and python_version < "
     #   ipython
 ipywidgets==8.1.5 ; python_version >= "3.11" and python_version < "4.0"
     # via -r /tmp/requirements_poetry_all.txt
-isoduration==20.11.0 ; python_version >= "3.11" and python_version < "4.0"
-    # via
-    #   -r /tmp/requirements_poetry_all.txt
-    #   jsonschema
 jedi==0.19.2 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
@@ -236,7 +215,6 @@ jedi==0.19.2 ; python_version >= "3.11" and python_version < "4.0"
 jinja2==3.1.6 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
-    #   jupyterhub
     #   litellm
 jiter==0.5.0 ; python_version >= "3.11" and python_version < "4.0"
     # via
@@ -247,7 +225,7 @@ joblib==1.4.2 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   dspy
-json-repair==0.39.1 ; python_version >= "3.11" and python_full_version < "3.12.4"
+json-repair==0.40.0 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   dspy
@@ -259,11 +237,9 @@ jsonpointer==3.0.0 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   jsonpatch
-    #   jsonschema
-jsonschema[format-nongpl]==4.23.0 ; python_version >= "3.11" and python_version < "4.0"
+jsonschema==4.23.0 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
-    #   jupyter-events
     #   litellm
 jsonschema-specifications==2024.10.1 ; python_version >= "3.11" and python_version < "4.0"
     # via
@@ -278,12 +254,6 @@ jupyter-core==5.7.2 ; python_version >= "3.11" and python_version < "4.0"
     #   -r /tmp/requirements_poetry_all.txt
     #   ipykernel
     #   jupyter-client
-jupyter-events==0.12.0 ; python_version >= "3.11" and python_version < "4.0"
-    # via
-    #   -r /tmp/requirements_poetry_all.txt
-    #   jupyterhub
-jupyterhub==5.2.1 ; python_version >= "3.11" and python_version < "4.0"
-    # via -r /tmp/requirements_poetry_all.txt
 jupyterlab-widgets==3.0.13 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
@@ -307,7 +277,7 @@ langsmith==0.1.147 ; python_version >= "3.11" and python_version < "4.0"
     #   -r /tmp/requirements_poetry_all.txt
     #   langchain
     #   langchain-core
-litellm==1.63.11 ; python_version >= "3.11" and python_version < "4.0"
+litellm==1.63.12 ; python_version >= "3.11" and python_full_version < "3.12.4"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   dspy
@@ -337,7 +307,7 @@ mdurl==0.1.2 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   markdown-it-py
-multidict==6.1.0 ; python_version >= "3.11" and python_version < "4.0"
+multidict==6.2.0 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   aiohttp
@@ -361,11 +331,7 @@ numpy==1.26.4 ; python_version >= "3.11" and python_version < "4.0"
     #   langchain
     #   optuna
     #   pandas
-oauthlib==3.2.2 ; python_version >= "3.11" and python_version < "4.0"
-    # via
-    #   -r /tmp/requirements_poetry_all.txt
-    #   jupyterhub
-openai==1.66.3 ; python_version >= "3.11" and python_version < "4.0"
+openai==1.67.0 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   dspy
@@ -387,14 +353,8 @@ packaging==24.2 ; python_version >= "3.11" and python_version < "4.0"
     #   datasets
     #   huggingface-hub
     #   ipykernel
-    #   jupyter-events
-    #   jupyterhub
     #   langchain-core
     #   optuna
-pamela==1.2.0 ; python_version >= "3.11" and python_version < "4.0" and sys_platform != "win32"
-    # via
-    #   -r /tmp/requirements_poetry_all.txt
-    #   jupyterhub
 pandas==2.2.3 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
@@ -410,17 +370,13 @@ pexpect==4.9.0 ; python_version >= "3.11" and python_version < "4.0" and sys_pla
     #   ipython
 pip-tools==7.4.1 ; python_version >= "3.11" and python_version < "4.0"
     # via -r /tmp/requirements_poetry_all.txt
-platformdirs==4.3.6 ; python_version >= "3.11" and python_version < "4.0"
+platformdirs==4.3.7 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   jupyter-core
     #   virtualenv
 pre-commit==3.8.0 ; python_version >= "3.11" and python_version < "4.0"
     # via -r /tmp/requirements_poetry_all.txt
-prometheus-client==0.21.1 ; python_version >= "3.11" and python_version < "4.0"
-    # via
-    #   -r /tmp/requirements_poetry_all.txt
-    #   jupyterhub
 prompt-toolkit==3.0.50 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
@@ -455,7 +411,6 @@ pydantic==2.10.6 ; python_version >= "3.11" and python_version < "4.0"
     #   -r /tmp/requirements_poetry_all.txt
     #   dspy
     #   instructor
-    #   jupyterhub
     #   langchain
     #   langchain-core
     #   langsmith
@@ -480,18 +435,12 @@ pyproject-hooks==1.2.0 ; python_version >= "3.11" and python_version < "4.0"
 python-dateutil==2.9.0.post0 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
-    #   arrow
     #   jupyter-client
-    #   jupyterhub
     #   pandas
 python-dotenv==1.0.1 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   litellm
-python-json-logger==3.3.0 ; python_version >= "3.11" and python_version < "4.0"
-    # via
-    #   -r /tmp/requirements_poetry_all.txt
-    #   jupyter-events
 pytz==2025.1 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
@@ -501,12 +450,11 @@ pyyaml==6.0.2 ; python_version >= "3.11" and python_version < "4.0"
     #   -r /tmp/requirements_poetry_all.txt
     #   datasets
     #   huggingface-hub
-    #   jupyter-events
     #   langchain
     #   langchain-core
     #   optuna
     #   pre-commit
-pyzmq==26.2.1 ; python_version >= "3.11" and python_version < "4.0"
+pyzmq==26.3.0 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   ipykernel
@@ -516,7 +464,6 @@ referencing==0.36.2 ; python_version >= "3.11" and python_version < "4.0"
     #   -r /tmp/requirements_poetry_all.txt
     #   jsonschema
     #   jsonschema-specifications
-    #   jupyter-events
 regex==2024.11.6 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
@@ -528,7 +475,6 @@ requests==2.32.3 ; python_version >= "3.11" and python_version < "4.0"
     #   datasets
     #   dspy
     #   huggingface-hub
-    #   jupyterhub
     #   langchain
     #   langsmith
     #   requests-toolbelt
@@ -537,16 +483,6 @@ requests-toolbelt==1.0.0 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   langsmith
-rfc3339-validator==0.1.4 ; python_version >= "3.11" and python_version < "4.0"
-    # via
-    #   -r /tmp/requirements_poetry_all.txt
-    #   jsonschema
-    #   jupyter-events
-rfc3986-validator==0.1.1 ; python_version >= "3.11" and python_version < "4.0"
-    # via
-    #   -r /tmp/requirements_poetry_all.txt
-    #   jsonschema
-    #   jupyter-events
 rich==13.9.4 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
@@ -565,17 +501,15 @@ six==1.17.0 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   python-dateutil
-    #   rfc3339-validator
 sniffio==1.3.1 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   anyio
     #   openai
-sqlalchemy==2.0.38 ; python_version >= "3.11" and python_version < "4.0"
+sqlalchemy==2.0.39 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   alembic
-    #   jupyterhub
     #   langchain
     #   optuna
 stack-data==0.6.3 ; python_version >= "3.11" and python_version < "4.0"
@@ -594,7 +528,7 @@ tiktoken==0.9.0 ; python_version >= "3.11" and python_version < "4.0"
     #   -r /tmp/requirements_poetry_all.txt
     #   langchain-openai
     #   litellm
-tokenizers==0.21.0 ; python_version >= "3.11" and python_version < "4.0"
+tokenizers==0.21.1 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   litellm
@@ -609,7 +543,6 @@ tornado==6.4.2 ; python_version >= "3.11" and python_version < "4.0"
     #   -r /tmp/requirements_poetry_all.txt
     #   ipykernel
     #   jupyter-client
-    #   jupyterhub
 tqdm==4.67.1 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
@@ -627,17 +560,11 @@ traitlets==5.14.3 ; python_version >= "3.11" and python_version < "4.0"
     #   ipywidgets
     #   jupyter-client
     #   jupyter-core
-    #   jupyter-events
-    #   jupyterhub
     #   matplotlib-inline
 typer==0.15.2 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   instructor
-types-python-dateutil==2.9.0.20241206 ; python_version >= "3.11" and python_version < "4.0"
-    # via
-    #   -r /tmp/requirements_poetry_all.txt
-    #   arrow
 typing-extensions==4.12.2 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
@@ -660,15 +587,11 @@ ujson==5.10.0 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   dspy
-uri-template==1.3.0 ; python_version >= "3.11" and python_version < "4.0"
-    # via
-    #   -r /tmp/requirements_poetry_all.txt
-    #   jsonschema
 urllib3==2.3.0 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   requests
-virtualenv==20.29.2 ; python_version >= "3.11" and python_version < "4.0"
+virtualenv==20.29.3 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   pre-commit
@@ -676,10 +599,6 @@ wcwidth==0.2.13 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   prompt-toolkit
-webcolors==24.11.1 ; python_version >= "3.11" and python_version < "4.0"
-    # via
-    #   -r /tmp/requirements_poetry_all.txt
-    #   jsonschema
 wheel==0.45.1 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
@@ -706,7 +625,7 @@ pip==25.0.1 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   pip-tools
-setuptools==75.8.2 ; python_version >= "3.11" and python_version < "4.0"
+setuptools==77.0.1 ; python_version >= "3.11" and python_version < "4.0"
     # via
     #   -r /tmp/requirements_poetry_all.txt
     #   pip-tools
